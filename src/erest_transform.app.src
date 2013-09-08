@@ -1,0 +1,18 @@
+%% -*- erlang -*-
+{application, erest_transform,
+ [{description, ""},
+  {vsn, "0.1.0"},
+  {registered, [ert_sup]},
+  {mod, {ert_app, []}},
+  {start_phases, []},
+  {applications, [
+                 kernel
+                 ,stdlib
+                 ,sasl
+                 ,ssl
+                 ,hackney
+                 ,jsx
+                 ,eoauth2
+                 ]},
+  {env, []}
+ ]}.
